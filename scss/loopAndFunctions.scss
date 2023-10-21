@@ -1,0 +1,9 @@
+@for $var from 1 to 3 {
+    .Section6Li#{$var} {
+        margin-bottom: 50px;
+    }
+}
+
+@function twice($two) {
+    @return $two * 2;
+}

@@ -1,0 +1,58 @@
+.headerClass {
+    margin-top: 20px;
+    position: fixed;
+
+    .GreenlineLogo {
+        height: 75;
+        width: 300;
+        margin-left: 150px;
+        
+    }
+
+    .navBar {
+        margin-top: 10px; 
+        margin-right: 150px;
+        float: right;
+        position: fixed;
+        left: 700px;
+        top: 10px;
+        line-height: 1.5;
+
+        .currency {
+            margin-top: 20px;
+            margin-right: 10px;
+        }
+
+        .cars {
+            margin-right: 10px; 
+            font-size: large;
+            color: blue;
+            border: hidden;
+        }
+
+        .navLinks {
+            text-decoration: none; 
+            font-size: xx-large; 
+            color: black;
+        }
+
+        .btnSignIn {
+            background-color: darkblue;
+            border-radius: 50px;
+            height: 40px;
+            width: 100px;
+            color: white;
+        }
+    }
+
+    .dropDownTrain {
+        @include carEdit(fixed, 100px,700px);
+
+        .cars {
+            margin-right: 10px; 
+            font-size: large;
+            color: blue;
+            border: hidden;
+        }
+    }
+}

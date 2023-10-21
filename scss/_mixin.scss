@@ -1,0 +1,56 @@
+@mixin carEdit($position, $top, $left) {
+    position: $position; 
+    top: $top; 
+    left: $left;
+}
+
+@mixin carEditImg($zIndex, $position, $left, $top, $marginLeft, $marginTop) {
+    z-index: $zIndex;
+    position: $position;
+    left: $left;
+    top: $top;
+    margin-left: $marginLeft;
+    margin-top: $marginTop;
+}
+
+@mixin TrainClass($bottom, $left, $color, $position, $fontSize) {
+    bottom: $bottom;
+    left: $left;
+    color: $color;  
+    position: $position; 
+    font-size: $fontSize;
+}
+
+@mixin formBtn($backGroundColor, $borderRadius, $width) {
+    background-color: $backGroundColor;
+    border-radius: $borderRadius;
+    width: $width;
+}
+
+@mixin Section5P($color, $fontSize, $postion, $top, $left) {
+    color: $color;   
+    font-size: $fontSize; 
+    position: $postion; 
+    top: $top; 
+    left: $left;
+}
+
+@mixin Section5Img345($zIndex, $marginLeft, $marginTop, $position, $top, $right) {
+        z-index: $zIndex; 
+        margin-left: $marginLeft; 
+        margin-top: $marginTop; 
+        position: $position; 
+        top: $top; 
+        right: $right;
+}
+
+@mixin cardFlex($boxShadow, $transition, $width, $marginLeft, $height, $position, $float, $left) {
+    box-shadow: $boxShadow;
+    transition: $transition;
+    width: $width;
+    margin-left: $marginLeft;
+    height: $height;
+    position: $position;
+    float: $float;
+    left: $left;
+}

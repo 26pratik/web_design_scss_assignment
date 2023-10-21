@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/main.css">
+</head>
+<body>
+    
+      <!--Header start-->  
+        <header class="headerClass">
+            <img src="homepage\homepage\Group 16059.png" alt="GreenLine Logo" class="GreenlineLogo" align="left">
+            <nav align="right" class="navBar">
+                <img src="homepage\homepage\gb@2x.png" alt="Sign In" class="currency">
+                    <select name="cars" class="cars">
+                        <option value="volvo" class="carOption">EN/USD</option>
+                        <option value="saab" class="carOption">EN/INR</option>
+                        <option value="opel" class="carOption">USD/EN</option>
+                      </select>  
+                <a href="#business" class="navLinks">Business</a> &nbsp; &nbsp;
+                <a href="https://www.youtube.com" class="navLinks">Help</a> &nbsp; &nbsp;
+                <a href="https://www.youtube.com" class="navLinks">Register</a> &nbsp; &nbsp;
+                <!--<a href="https://www.youtube.com" style="text-decoration: none; font-size: xx-large; background-color:DodgerBlue; color: white;">Sign In</a>  -->
+                <input type="button" value="Sign In" class="btnSignIn" name="signIn">                 
+            </nav>
+            <br>
+            <div align="right" class="dropDownTrain">
+                <select name="UK Trains" id="UKTrains" class="cars">
+                    <option value="UK Trains">UK Trains</option>
+                    <option value="Train 1">Train 1</option>
+                    <option value="Train 2">Train 2</option>
+                </select>
+                <select name="European Trains" id="EuropeanTrains" class="cars">
+                    <option value="European Trains">European Trains</option>
+                    <option value="Train 1">Train 1</option>
+                    <option value="Train 2">Train 2</option>
+                </select>
+                <select name="Train companies" id="Traincompanies" class="cars">
+                    <option value="Train companies">Train companies</option>
+                    <option value="Company 1">Company 1</option>
+                    <option value="Company 2">Company 2</option>
+                </select>
+                <select name="Popular Journeys" id="PopularJourneys" class="cars">
+                    <option value="Popular Journeys">Popular Journeys &nbsp &nbsp &nbsp</option>
+                    <option value="Journey 1">Journey 1</option>
+                    <option value="Journey 2">Journey 2</option>
+                </select>
+                <!--<img src="homepage\homepage\Group 9824@2x.png" alt="Group 9824" align="right" width="650" height="20" style="margin-right: 150px;">-->
+            </div>
+            
+        </header>
+        <!--Header end-->  
+        <br> 
+        <!--Main start-->  
+        <main>
+            <div class="mainDiv">
+                <!--Main Section 1-->  
+                <div class="business">
+                <form action="https://www.youtube.com" method="GET" class="formCss">
+                    <fieldset class="fieldSetClass">
+                        <label for="placeholder">Input </label>
+                        <input type="text" name="placeholder" placeholder="placeholder" size="25" id="placeholder" maxlength="20" required class="fieldSetClass">
+
+                        <label for="to">To</label>
+                        <input type="text" name="to" placeholder="placeholder"id="to" minlength="3" class="fieldSetClass">
+            
+                    </fieldset>
+
+                    <fieldset class="fieldSetClass">
+                        <input type="checkbox" id="route" name="route" value="route" required class="fieldSetClass">
+                        <label for="route">Via/Avoid</label>
+
+                        <select name="ROute" id="route" class="fieldSetClass">
+                            <option value="Avoid">Avoid</option>
+                            <option value="Via">Via</option>
+                        </select>
+                        <label for="Enter station..."></label>
+                        <input type="text" name="station" id="station" placeholder="Enter Station..." size="40" class="fieldSetClass">
+                    </fieldset>
+<br>
+                    <fieldset class="fieldSetClass formBtnClass">
+                        <input type="button" id="oneway" name="oneway" value="One Way" class="fieldSetClass formBtnClass2">
+                        <input type="button" id="returnButton" name="return" value="Return" class="fieldSetClass formBtnClass3">
+                        <input type="button" id="openReturn" name="openReturn" value="Open Return" class="fieldSetClass formBtnClass2">
+                        <input type="button" id="seasons" name="seasons" value="Seasons" class="fieldSetClass formBtnClass2">
+                    </fieldset>
+
+                    <fieldset class="fieldSetClass">
+                        <legend>Date</legend>
+                        <label for="date">Out</label>
+                        <input type="date" id="out" name="out">
+
+                        <label for="date">Return</label>
+                        <input type="date" id="return" name="return">
+                    </fieldset>
+                    <fieldset class="fieldSetClass">
+                        <label for="OutTime">Leaving At</label>
+                        <input type="time" id="OutTime" name="OutTime" class="fieldSetClass">
+
+                        <label for="OutTime">Leaving At</label>
+                        <input type="time" id="OutTime" name="OutTime" class="fieldSetClass">
+                    </fieldset>
+                    <fieldset class="fieldSetClass">
+                        <legend>Add Passengers</legend>
+                        <select name="count" id="count"  class="fieldSetClass fieldSetClass10">
+                            <option value="1">1 child, 1 adult</option>
+                            <option value="2">2 child, 2 adult</option>
+                            <option value="3">3 child, 3 adult</option>
+                        </select>
+                    </fieldset>
+                    <br>
+                    <button type="submit" class="fieldSetClass formBtnClass1">Get times and tickets</button>
+                    <br>
+                </form>
+            </div>
+
+            <!--Main Section 2-->  
+            <div class="TrainClass">
+                <img src="homepage/homepage/nick-page-4iZrQRh5gb4-unsplash.png" alt=" Unsplash" width="800px" height="500px"  class="trainClassImg">
+                <p class="TrainClassP1">
+                    <strong>Explore</strong> <b> Europe</b> <i> effortlessly</i> <em> by train</em> and bus</p>
+                <p class="TrainClassP2"><b> Save 61% on average if you book in advance* </b></p>
+                <input type="button" id="Learn More" class="TrainClassBtn" value="Learn More">
+                <img src="homepage/homepage/trian_PNG16650@2x.png" alt=" Trian" class="TrainClassImg2" height="100px" width="300px">
+            </div>
+               
+            </div>
+            <!--Main Section 3-->  
+            <div class="BeforeCardFlex">
+            <div class="cardFlex">
+ <!--              <img src="homepage/homepage/Repeat Grid 17@2x.png" alt="Repeat Grid" height="200px" width="70%" style="margin-left: 200px;">
+                
+        --> 
+        <img src="homepage/homepage/nick-page-4iZrQRh5gb4-unsplash@2x.png" alt="Avatar" width="350px" height="150px" class="cardImgFlex1">
+        <div class="containerFlex">
+          <h4 class="cardH4Flex"><b>London to Liverpool</b></h4> 
+          <div class="cardFlexDiv">
+          <p class="cardP1Flex">7.0</p>
+          <p class="cardP2Flex">Good Reviews 350</p>
+        </div>
+        <br>
+        <div class="cardFlexDiv2">
+          <p class="cardP3Flex">from $75.08</p> 
+        </div>
+        </div>
+    </div>
+
+    <div class="cardFlex1">
+        <!--              <img src="homepage/homepage/Repeat Grid 17@2x.png" alt="Repeat Grid" height="200px" width="70%" style="margin-left: 200px;">
+                       
+               --> 
+               <img src="homepage/homepage/nick-page-4iZrQRh5gb4-unsplash@2x.png" alt="Avatar" width="350px" height="150px" class="cardImgFlex1">
+               <div class="containerFlex">
+                 <h4 class="cardH4Flex"><b>London to Liverpool</b></h4> 
+                 <div class="cardFlexDiv">
+                 <p class="cardP1Flex">7.0</p>
+                 <p class="cardP2Flex">Good Reviews 350</p>
+               </div>
+               <br>
+               <div class="cardFlexDiv2">
+                 <p class="cardP3Flex">from $75.08</p> 
+               </div>
+               </div>
+           </div>
+
+           <div class="cardFlex2">
+            <!--              <img src="homepage/homepage/Repeat Grid 17@2x.png" alt="Repeat Grid" height="200px" width="70%" style="margin-left: 200px;">
+                           
+                   --> 
+                   <img src="homepage/homepage/nick-page-4iZrQRh5gb4-unsplash@2x.png" alt="Avatar" width="350px" height="150px" class="cardImgFlex1">
+                   <div class="containerFlex">
+                     <h4 class="cardH4Flex"><b>London to Liverpool</b></h4> 
+                     <div class="cardFlexDiv">
+                     <p class="cardP1Flex">7.0</p>
+                     <p class="cardP2Flex">Good Reviews 350</p>
+                   </div>
+                   <br>
+                   <div class="cardFlexDiv2">
+                     <p class="cardP3Flex">from $75.08</p> 
+                   </div>
+                   </div>
+               </div>
+</div>
+<br>
+<div>
+        <img src="homepage/homepage/Group 9846@2x.png" alt="Group" height="20px" width="5%" class="DOtDot"> <br> <br>
+        <input type="button" id="viewAll" name="viewAll" value="View All" class="ViewAllBtn">
+    </div>      
+            <br>
+
+            <!--Main Section 4-->  
+            <div class="card">
+                
+                <div class="cardEdit">
+                    <img src="homepage/homepage/Ellipse 9@2x.png" alt="Ellipse" height="40px" width="40px" class="carEditImg">
+                    <img src="homepage/homepage/1@2x.png" alt="1@2x" class="carEditImgBottom">
+                    <div class="container container1">
+                        <h5 class="h5Card">Compare</h5>
+                        <p class="carEditP">Compare cheap prices for train and bus tickets</p>
+                    </div>
+                </div>
+
+                <div class="cardEdit cardEdit1">
+                    <img src="homepage/homepage/Ellipse 9@2x.png" alt="Ellipse" height="40px" width="40px" class="carEditImg">
+                    <img src="homepage/homepage/-train_90433@2x.png" alt="TRain" class="carEditImgBottom">
+                    <div class="container container2">
+                        <h5 class="h5Card">Travel</h5>
+                        <p class="carEditP">Travel thousands of destinations in and across 45 countries</p>
+                    </div>
+                </div>
+
+                <div class="cardEdit cardEdit2">
+                    <img src="homepage/homepage/Ellipse 9@2x.png" alt="Ellipse" height="40px" width="40px" class="carEditImg">
+                    <img src="homepage/homepage/XMLID_91_@2x.png" alt="XMLID" class="carEditImgBottom">
+                    <div class="container container2">
+                        <h5 class="h5Card">Join People</h5>
+                        <p class="carEditP">Join millions of people who join us everyday</p>
+                    </div>
+                </div>
+
+                <div class="cardEdit cardEdit3">
+                    <img src="homepage/homepage/Ellipse 9@2x.png" alt="Ellipse" height="40px" width="40px" class="carEditImg">
+                    <img src="homepage/homepage/XMLID_91_@2x.png" alt="XMLID" class="carEditImgBottom">
+                    <div class="container container2">
+                    <h5 class="h5Card">Support</h5>
+                    <p class="carEditP">Customer service on hand every step of the way</p>
+                </div>   
+                <div class="cardEdit cardEdit4">
+                        <img src="homepage/homepage/Ellipse 9@2x.png" alt="Ellipse" height="40px" width="40px" class="carEditImg carEditImg4">
+                        <img src="homepage/homepage/XMLID_91_@2x.png" alt="XMLID" class="carEditImgBottom carEditImgBottom4">
+                        <div class="container container3">
+                        <h5 class="h5Card">Customer</h5>
+                        <p class="carEditP">Our differentiated customers</p> 
+                    </div>
+                </div>
+                <div class="carEditDiv100">
+                    <img src="homepage/homepage/Group 9808.png" alt="Arrow" class="carEditImg100">
+                </div>
+
+            </div>
+<!--Main Section 5-->  
+            <div class="Section5Div">
+                <img src="homepage/homepage/Rectangle 159.png" alt="Rectange 159" class="Section5Img1">
+                <img src="homepage/homepage/Rectangle 113.png" alt="Rectange 113" class="Section5Img2">
+                
+                <p class="Section5P1">Explore Europe effortlessly </p>
+                    <p class="Section5P2">by train and  <strong>buses</strong></p>
+                    <p class="Section5P3">Save 61% on average if you book in advance*</p>
+                    <input type="button" class="getMoreDetails" value="Get more details">
+                
+                <div>
+                    
+                    <img src="homepage/homepage/trian_PNG16650@2x.png" alt="Trian" height="100px" width="300px" class="Section5Img3">
+                    <img src="homepage/homepage/woman-hungarian-parliament-budapest-hungary-shutterstock_1118873774-1024x683.png" alt="Budapest" height="300px" width="300px" class="Section5Img4">
+                    <img src="homepage/homepage/Repeat Grid 19.png" alt="Repeat Grid" title="Repeat Grid" height="100px" width="50px" class="Section5Img5">
+  
+                </div>
+            </div>
+<!--Main Section 6-->  
+            <div class="Section6Div">
+                <div  class="Section6Div2"> 
+                    <h1>We are here to help you</h4>
+                        <p target="_attSel">Find clear <a href="https://www.youtube.com">FAQs</a> online and Customer service available at the end of the phone seven days a week</p>
+                        <picture>
+                            <source srcset="homepage/homepage/illu_laptop_help@2x.png" media="(min-width: 1000px)">
+                            <source srcset="homepage/homepage/Repeat Grid 19.png" media="(min-width: 800px)">
+                     
+                            <img src="homepage/homepage/illu_laptop_help@2x.png" alt="Laptop" height="200px" width="300px">
+                        </picture>
+                        <br><br>
+                        <input type="button" class="ctaButton" value="CTA Button" >
+                </div>
+                <div class="Section6DIv3">
+                    <ul class="Section6Ol">
+                        <li class="Section6Li1">
+                            <div class="Section6Div4"><h4>Do I need to confirm in advance if travelling on a different train </h4></div> 
+                            <div class="Section6Div5">-</div>
+                            <br><br><br>
+                            <p>You don't need to let us know if you want to change trains, but you'll need to check the terms of your ticket to see if it'll still 
+                                be valid for a different train
+                            </p>
+                        </li>
+                        <li class="Section6Li1"><div> How much luggage can i take on the train</div><div class="Section6Div6"> +</div></li>
+                            <li class="Section6Li2"><div> How will I receive my tickets</div><div class="Section6Div6"> +</div></li>
+                                <li class="Section6Li2"><div> What do the different seat options mean</div><div class="Section6Div6"> +</div></li>
+                    </ul>
+                </div>
+            </div>
+<!--Main Section 7-->  
+            <div class="Section7Div1">
+                <div class="Section7Div2">
+                    <article>
+                    <h1>Europe's Leading train and bus app</h2>
+                        <p>Keep your trick on track with departure times, platform info and tickets in the palm of your hands</p>
+                    </article>
+                    <div class="Section7Div3">
+                        <img src="homepage/homepage/Group 9691@2x.png" alt="Group" height="75px" width="150px">
+                        <img src="homepage/homepage/Group 9693@2x.png" alt="Group" height="75px" width="150px">
+
+                    </div>
+                </div>
+                <div >
+                    <figure>
+                        <img src="homepage/homepage/mobile3@2x.png" alt="Mobile" height="300px" width="250px">
+                        <figcaption class="Section7Fig">Mobile Phone</figcaption>
+                    </figure>
+                    
+                </div>
+            </div>
+            <div class="Section7Div4">
+                <img src="homepage/homepage/Group 9807@2x.png" alt="Group" height="50px" width="50px">
+                <img src="homepage/homepage/Group 9808@2x.png" alt="Group" height="50px" width="50px">
+            </div>
+<br> <br> <br>
+<!--Footer-->  
+            <div>
+                <div class="FooterDiv1" >
+                    <p class="FooterP1">We are happy when are customers are happy too</p>
+                    <div class="FooterDiv2">
+                        <img src="homepage\homepage\Group 16060.png" alt="GreenLine Logo" class="FooterImg1" height="50" width="200" align="left">
+                        <br> <br>
+                        <p class="FooterP2">Greenline.com is registered in England and Whales, Company No. 3846791</p> <br>
+                        <address class="FooterP2">
+                            3rd floor, 120 HOlborn, London EC1N 2TD, United Kingdom. VAT Number : 791 7261 06
+                        </address> <br>
+                        <div class="FooterDiv3">
+                            <img src="homepage/homepage/Group 9740@2x.png" alt="Group" height="50px" width="50px">
+                            <img src="homepage/homepage/Group 9741@2x.png" alt="Group" height="50px" width="50px"> 
+                            <img src="homepage/homepage/Group 9742@2x.png" alt="Group" height="50px" width="50px">
+                            <img src="homepage/homepage/Group 9743@2x.png" alt="Group" height="50px" width="50px">                                                       
+                        </div>
+                   </div>
+                    
+                    <div class="FooterDiv4">
+                        <ul class="FooterUl1">
+                            <li class="FooterLi1">About Greenline</li>
+                            <li class="FooterLi1">News</li>
+                            <li class="FooterLi1">Investors</li>
+                            <li class="FooterLi1">Careers</li>
+                            <li class="FooterLi1">Greenline Partner Solutions</li>
+                            <li class="FooterLi1">Affiliates and Partnerships</li>
+                            <li class="FooterLi1">Terms and conditions / Security</li>
+                            <li class="FooterLi1">Privacy / Cookies</li>
+                            <li class="FooterLi1">Modern Slavery Act (UK)</li>
+                        </ul>
+                    </div>
+                    <div class="FooterDiv5">
+                        <ul class="FooterUl1">
+                            <li class="FooterLi2"> <div> Help and Useful Information &ensp;</div> <div class="Section6Div100"> + </div></li>
+                            <li class="FooterLi2"><div> Train and bus companies &ensp; </div> <div class="Section6Div100">+ </div></li>
+                            <li class="FooterLi2"><div> Train journeys in the UK &ensp;</div> <div class="Section6Div100"> + </div></li>
+                            <LI class="FooterLi2"><div> Train and buses in Europe &ensp;</div><div class="Section6Div100"> +</div></LI>
+                            <li class="FooterLi2"><div> Top Destinations &ensp;</div> <div class="Section6Div100"> + </div></li>
+                            <li class="FooterLi2"><div> Stations &ensp;</div> <div  class="Section6Div100"> + </div></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="FooterDiv6">
+                    <p class="FooterP"> Copyright © 2021vGreenline.com Limited and its Affiliated companies. All rights reserved. &ensp;&ensp;&ensp; Terms&Condition | Privacy Policy</p>
+                </div>
+            </div>
+        </main>
+
+</body>
+</html>

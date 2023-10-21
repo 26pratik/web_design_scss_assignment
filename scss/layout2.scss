@@ -1,0 +1,475 @@
+/* Header CSS */
+
+
+
+
+
+
+
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    background-color: whitesblmoke; 
+    width: 80%; 
+    height: 200px; 
+    margin-left: 100px; 
+    z-index: -1; 
+    position: relative;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+
+  .cardEdit {
+    color: white; 
+    width: 300px; 
+    height: 200px; 
+    z-index: 0; 
+    margin-left: 50px;
+  }
+
+.cardEdit1 {
+    @include carEdit(relative, -200px, 200px);
+  }
+
+  .cardEdit2 {
+    @include carEdit(relative, -400px,450px);
+  }
+
+  .cardEdit3 {
+    @include carEdit(relative, -600px,650px);
+}
+
+.cardEdit4 {
+    @include carEdit(relative, -175px,150px);
+}
+
+.h5Card {
+    z-index: 1; 
+    color: black; 
+    margin-left: 70px; 
+    font-size: large;
+}
+
+.carEditImg {
+    @include carEditImg(-1, absolute, 50px, 0px, 50px, 30px);
+}
+
+.carEditImg100 {
+  height: 50px;
+  width: 60px;
+  position: relative; 
+  top: -250px; 
+  left: 400px;
+  border-radius: 20px;
+}
+
+.carEditImgBottom {
+    
+    height: 20px; 
+    width: 20px; 
+    @include carEditImg(-1, absolute, 90px, 10px, 20px, 30px);
+}
+
+.container1 {
+  top: 70px; 
+  position: relative; 
+  right: 50px;
+}
+
+.carEditP {
+  color: black; 
+  font-size: x-small;
+}
+
+.carEditImgBottom4 {
+  left: 110px; 
+  top: 85px; 
+  margin-left: 0px;
+}
+
+.carEditImg4 {
+  top: 80px;
+}
+
+.container2 {
+  top: 70px; 
+  position: relative;
+}
+
+/* CSS for FORM */
+
+/* CSS for MAIN */
+.mainDiv {
+  background-image: url('homepage/homepage/Rectangle 109.png'); 
+  width: 100%; 
+  height: 700px; 
+  position: relative;
+}
+
+.ViewAllBtn {
+  margin-left: 660px;
+  border-radius: 20px;
+  background-color: blue;
+  width: 100px;
+  height: 30px;
+  border: hidden;
+  font-size: large;
+}
+
+.Section5P1 {
+    @include Section5P(white, xxx-large, relative, -350px, 100px);
+  }
+
+.Section5P2 {
+    @include Section5P(white, xxx-large, relative, -400px, 100px);
+}
+
+.Section5P3 {
+    @include Section5P(white, x-large, relative, -400px, 100px);
+  }
+
+.getMoreDetails {
+  color: green; 
+  font-size: large; 
+  position: relative; 
+  top: -400px; 
+  left: 100px;
+  border: hidden;
+  border-radius: 20px;
+  width: 200px;
+  height: 50px;
+}
+
+.ctaButton {
+  background-color: blue;
+  border: hidden;
+  border-radius: 40px;
+  color: white;
+  margin-left: 50px;
+  height: 50px;
+  width: 200px;
+  font-size: large;
+}
+
+.container3 {
+  top: 140px; 
+  position: relative; 
+  left: 10px;
+}
+
+.Section5Div {
+  width: 100%; 
+  height: 400px; 
+  margin-left: 50px;
+}
+
+.Section5Img1 {
+  position: absolute; 
+  z-index: -1; 
+  height: 300px; 
+  width: 1300px;
+}
+
+.Section5Img2 {
+  position: relative; 
+  z-index: 0; 
+  height: 300px; 
+  width: 1300px; 
+  left: 10px;
+}
+
+.Section5Img3 {
+    @include Section5Img345(0, 900px, 50px, relative, -550px, 150px);
+  }
+
+.Section5Img4 {
+    @include Section5Img345(0, 1000px, -300px, relative, -550px, 20px);
+  }
+
+.Section5Img5 {
+    @include Section5Img345(1, 1000px, -100px, relative, -700px, 0px);
+  }
+
+/* Section 6 CSS */
+.Section6Div {
+  width: 100%; 
+  height: 400px; 
+  position: relative;
+}
+
+.Section6Div2 {
+  width: 400px; 
+  float: left;
+}
+
+.Section6DIv3 {
+  float: right; 
+  width: 50%; 
+  margin-right: twice($two);
+}
+
+.Section6Li1 {
+   //margin-bottom: 50px;
+  border:2px solid black;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.Section6Li2 {
+    // margin-bottom: 50px;
+    @extend .Section6Li1;
+    // border:2px solid black;
+    // border-radius: 20px;
+    // padding: 5px;
+  }
+
+.Section6Ol {
+  list-style-type: none;
+}
+
+.Section6Div4 {
+  
+  float: left;
+}
+
+.Section6Div5 {
+  position: relative;
+  top: 10px;
+  float: right;
+  font-size: xx-large;
+}
+
+.Section6Div6 {
+  position: relative;
+  top: -30px;
+  float: right;
+  font-size: xx-large;
+}
+
+/* Footer CSS */
+.FooterDiv1 {
+  background-color: rgb(0,168,143); 
+  width: 100%; 
+  height: 300px; 
+  position: relative; 
+  float: left; 
+  padding-left: 20px;
+}
+
+.FooterP1 {
+  color: white; 
+  margin-left: 20px;
+}
+
+.FooterDiv2 {
+  width: 30%;
+}
+
+.FooterImg1 {
+  margin-left: 50px;
+}
+
+.FooterDiv3 {
+  float: left;
+}
+
+.FooterDiv4 {
+  width: 25%; 
+  position: relative; 
+  top: -200px; 
+  left: 200px; 
+  margin-left: 175px;
+}
+
+.FooterDiv5 {
+  width: 30%; 
+  position: relative;  
+  bottom: 400px; 
+  margin-left: 200px; 
+  float: right;
+  padding-right: 100px;
+}
+
+.FooterDiv6 {
+  background-color: darkgreen; 
+  width: 100%; 
+  height: 50px; 
+  position: relative; 
+  float: left; 
+  padding-left: 20px;
+}
+
+.FooterP {
+  margin-left: 50px;
+  color: white;
+}
+
+.FooterP2 {
+  color: white;
+}
+
+.FooterUl1 {
+  list-style-type: none;
+}
+
+.FooterLi1 {
+  padding-bottom: 8px;
+  color: white;
+}
+
+.FooterLi2 {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid white;
+  color: white;
+  position: relative;
+  bottom: 70px;
+}
+
+/* CSS Lab Styling */
+p[target=_attSel] {
+  background-color: yellow;
+}
+
+[title~=Grid] { 
+  border: 5px solid yellow;
+}
+
+div p {
+  color: black;
+}
+
+div > h1 {
+  color: pink;
+} 
+
+p+div {
+  border: 1px solid yellow;
+}
+
+.p::first-letter {
+  font-weight: bold;
+}
+
+.BeforeCardFlex {
+  display: flex;
+}
+
+.cardFlex {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 27%;
+  margin-left: 30px;
+  height: 250px;
+  position: relative;
+  float: left;
+  left: 50px;
+}
+
+.cardFlex1 {
+    @include cardFlex(0 4px 8px 0 rgba(0,0,0,0.2), 0.3s, 27%, 30px, 250px, relative, right, 100px);
+  }
+
+.cardFlex2 {
+    @include cardFlex(0 4px 8px 0 rgba(0,0,0,0.2), 0.3s, 27%, 30px, 250px, relative, right, 150px);
+}
+
+.cardFlex:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.containerFlex {
+  padding: 2px 16px;
+}
+
+.cardH4Flex {
+  position: absolute;
+  float: left;
+  
+}
+
+.cardP1Flex {
+  float: right;
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  right: 100px;
+}
+
+.cardP2Flex {
+  float: right;
+  position: relative;
+  left: 50px;
+}
+
+.cardFlexDiv {
+  padding: 10px;
+  background-color: white;
+  font-size: smaller;
+}
+
+.cardP3Flex {
+  position: relative;
+  bottom: 50px;
+  color: rgb(134, 215, 165);
+}
+
+.cardFlexDiv2 {
+  position: relative;
+  top: 50px;
+  
+}
+
+.cardImgFlex1 {
+  margin-left: 25px;
+}
+
+.DOtDot {
+  margin-left: 675px;
+}
+
+.Section6Div100 {
+  position: relative;
+  top: -20px;
+  
+  float: right;
+  font-size: x-large;
+}
+
+.Section7Div1 {
+    width: 100%; 
+    height: 400px; 
+    position: relative; 
+    margin-left: 150px;
+  }
+  
+  .Section7Div2 {
+    width: 465px; 
+    float: left;
+  }
+  
+  .Section7Div3 { 
+    float: left;
+  }
+  
+  .Section7Fig {
+    text-align: right; 
+    margin-right: 500px;
+  }
+  
+  .Section7Div4 {
+    float: right; 
+    margin-right: 200px;
+  }
+
