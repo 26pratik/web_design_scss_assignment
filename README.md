@@ -1,6 +1,6 @@
 # web_design_scss_assignment
 
-Add layout for Assignment 3 web page as per the mock image and convert all CSS to SCSS syntax.
+Add layout for Assignment 3 (https://github.com/26pratik/web_design_css_assignment) web page as per the mock image and convert all CSS to SCSS syntax.
 
 1. The goal of this assignment is to learn about CSS positioning, Grid layout / Flexbox, SCSS features like variables, mixins, inheritance, loops, functions, math operations, etc.
 2. SCSS should be organized in multiple files based on UI features, common elements, and themes.
